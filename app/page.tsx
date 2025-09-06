@@ -20,27 +20,41 @@ export default function Home() {
           <Button className="flex items-center gap-1 text-[#000000] bg-gradient-to-r from-[#FFCC33] to-[#B7860B] rounded-[24px] cursor-pointer">
             Get Started Free <span>→</span>
           </Button>
-          <Button className="rounded-[24px] border-[2px] border-[#FFCC33] text-[#FFFFFF]">See Demo</Button>
+          <Button className="rounded-[24px] border-[2px] border-[#FFCC33] text-[#FFFFFF]">
+            See Demo
+          </Button>
         </div>
         <div className="flex gap-4 md:mt-6">
           <div className="flex gap-2 items-center">
-            <div className="w-2 h-2 rounded-full bg-[#16A249]"/> 
-            <p className="text-[#B3B3B3] text-[14px]">No credit card required</p>
+            <div className="w-2 h-2 rounded-full bg-[#16A249]" />
+            <p className="text-[#B3B3B3] text-[14px]">
+              No credit card required
+            </p>
           </div>
 
-              <div className="flex gap-2 items-center">
-            <div className="w-2 h-2 rounded-full bg-[#FFCC33]"/> 
+          <div className="flex gap-2 items-center">
+            <div className="w-2 h-2 rounded-full bg-[#FFCC33]" />
             <p className="text-[#B3B3B3] text-[14px]">Setup in 2 minutes</p>
           </div>
-
         </div>
       </div>
       <div className="w-1/2 hidden md:block  relative">
-        <Image src={`/assets/images/banner.png`} alt="hero" width={600} height={400} className="object-cover"/>
-        <div className="absolute left-[530.23px] top-[-42.08px] border-2 border-[#333333]">
+        <Image
+          src={`/assets/images/banner.png`}
+          alt="hero"
+          width={600}
+          height={400}
+          className="object-cover w-full"
+        />
+        <div className="absolute left-[500px] top-[-42.08px] border-2 border-[#333333] p-2">
           <p className="text-[#FFCC33] text-[14px]">Live Crawls</p>
-          <p className="text-[#FFFFFF] text-[24px]">14</p>
+          <p className="text-[#FFFFFF] text-[18px]">14</p>
           <p className="text-[#16A249] text-12px]">+3 since yesterday</p>
+        </div>
+        <div>
+            <div className="absolute inset-0 bg-gradient-to-b from-orange-500/20 via-yellow-500/10 to-slate-600 rounded-xl blur-xl -z-10 transform translate-y-2"></div>
+
+          <div className="absolute inset-0 rounded-md bg-gradient-to-br from-[#FFD966] from-10% to-[#B7860B] to-10% opacity-50 -z-10 " />
         </div>
       </div>
     </div>
