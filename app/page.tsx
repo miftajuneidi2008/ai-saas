@@ -49,10 +49,10 @@ export default function Home() {
         <div className="absolute left-[500px] top-[-42.08px] border-2 border-[#333333] p-2">
           <p className="text-[#FFCC33] text-[14px]">Live Crawls</p>
           <p className="text-[#FFFFFF] text-[18px]">14</p>
-          <p className="text-[#16A249] text-12px]">+3 since yesterday</p>
+          <p className="text-[#16A249] text-12px]">+3 since yesterday</p> 
         </div>
         <div>
-            <div className="absolute inset-0 bg-gradient-to-b from-orange-500/20 via-yellow-500/10 to-slate-600 rounded-xl blur-xl -z-10 transform translate-y-2"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-orange-500/20 via-yellow-500/10 to-[#FFFFFF] rounded-xl blur-md -z-10 transform translate-y-2"></div>
 
           <div className="absolute inset-0 rounded-md bg-gradient-to-br from-[#FFD966] from-10% to-[#B7860B] to-10% opacity-50 -z-10 " />
         </div>
