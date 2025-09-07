@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className="flex  gap-6 items-center h-full md:h-[calc(100vh-80px)] max-w-[1340px] mx-auto">
       <div className="flex flex-col gap-4 w-1/2">
-        <p className="text-[12px] text-[#FFD966]">
-          🚀he Future of Brand Visibility
+        <p className="text-[13px] text-[#FFD966] border-[0.5px] border-[#FFD966] rounded-lg w-max px-2">
+          🚀 The Future of Brand Visibility
         </p>
-        <h2 className="text-5xl font-bold text-[#FFCC33] flex flex-col gap-2">
+        <h2 className="text-xl md:text-6xl font-bold text-[#FFCC33] flex flex-col gap-2">
           <span>Track How LLMs</span>
           <span>See Your Brand.</span>
         </h2>
-        <p className="text-[#B3B3B3] text-[17px] flex flex-col gap-1">
+        <p className="text-[#B3B3B3] text-[20px] flex flex-col gap-1">
           <span>Discover how AI models mention, crawl, and rank your</span>
           business across OpenAI, Perplexity, Anthropic, and more.<span></span>
         </p>
@@ -38,23 +38,26 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 hidden md:block  relative">
+      <div className="w-1/2 hidden md:block  relative bg-black rounded-lg">
         <Image
           src={`/assets/images/banner.png`}
           alt="hero"
           width={600}
           height={400}
-          className="object-cover w-full"
+          className="object-cover w-full rounded-lg"
         />
-        <div className="absolute left-[500px] top-[-42.08px] border-2 border-[#333333] p-2">
-          <p className="text-[#FFCC33] text-[14px]">Live Crawls</p>
-          <p className="text-[#FFFFFF] text-[18px]">14</p>
-          <p className="text-[#16A249] text-12px]">+3 since yesterday</p> 
+        <div className="absolute left-[500px] top-[-54] p-2 z-10">
+          <div className="bg-[#141414] relative px-2">
+            <p className="text-[#FFCC33] text-[14px]">Live Crawls</p>
+            <p className="text-[#FFFFFF] text-[18px]">14</p>
+            <div className="absolute inset-0 bg-[#FFCC33] rounded-xl blur-xs -z-10 transform "></div>
+          </div>
+          <p className="text-[#16A249] text-12px]">+3 since yesterday</p>
         </div>
         <div>
-            <div className="absolute inset-0 bg-gradient-to-b from-orange-500/20 via-yellow-500/10 to-[#FFFFFF] rounded-xl blur-md -z-10 transform translate-y-2"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-500/20 via-yellow-500/10 to-[#FFFFFF] rounded-xl blur-lg -z-10 transform -translate-y-1"></div>
 
-          <div className="absolute inset-0 rounded-md bg-gradient-to-br from-[#FFD966] from-10% to-[#B7860B] to-10% opacity-50 -z-10 " />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFD966] from-10% to-[#B7860B] to-10% opacity-50 -z-10 rounded-lg" />
         </div>
       </div>
     </div>
