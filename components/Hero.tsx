@@ -4,12 +4,12 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className="flex max-md:flex-col gap-6 items-center min-h-screen md:h-[calc(100vh-80px)] max-w-[1340px] mx-auto">
-      <div className="flex flex-col gap-4 w-full md:w-1/2 ml-8 md:ml-0">
+    <div className="flex flex-col md:flex-row gap-6 items-center min-h-screen md:h-[calc(100vh-80px)] max-w-[1340px] mx-auto">
+      <div className="flex flex-col gap-4 w-full md:w-1/2 ml-10 md:ml-0">
         <p className="text-[12px] md:text-[13px] text-[#FFD966] border-[0.5px] border-[#FFD966] rounded-lg w-max px-2">
           🚀 The Future of Brand Visibility
         </p>
-        <h2 className="text-2xl md:text-3xl lg:text-6xl font-bold text-[#FFCC33] flex flex-col gap-2">
+        <h2 className="text-3xl lg:text-6xl font-bold text-[#FFCC33] flex flex-col gap-2">
           <span>Track How LLMs</span>
           <span>See Your Brand.</span>
         </h2>
@@ -17,7 +17,7 @@ const Hero = () => {
           <span>Discover how AI models mention, crawl, and rank your</span>
           business across OpenAI, Perplexity, Anthropic, and more.<span></span>
         </p>
-        <div className="flex gap-4 md:mt-4">
+        <div className="flex gap-6 md:gap-4 md:mt-4">
           <Button className="flex items-center gap-1 text-[#000000] bg-gradient-to-r from-[#FFCC33] to-[#B7860B] rounded-[24px] cursor-pointer">
             Get Started Free <span>→</span>
           </Button>
@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 hidden md:block  relative bg-black rounded-lg">
+      <div className="w-[95%] mx-auto md:mx-0 md:w-1/2 relative bg-black rounded-lg">
         <Image
           src={`/assets/images/banner.png`}
           alt="hero"
@@ -47,7 +47,7 @@ const Hero = () => {
           height={400}
           className="object-cover w-full rounded-lg"
         />
-        <div className="absolute left-[500px] top-[-54] p-2 z-10">
+        <div className="hidden md:absolute left-[500px] top-[-54] p-2 z-10">
           <div className="bg-[#141414] relative px-2">
             <p className="text-[#FFCC33] text-[14px]">Live Crawls</p>
             <p className="text-[#FFFFFF] text-[18px]">14</p>
