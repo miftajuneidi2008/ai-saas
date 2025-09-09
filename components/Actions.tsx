@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./card/ActionCard";
+import ActionCard from "./card/ActionCard";
 
 const Actions = () => {
   return (
@@ -9,20 +10,20 @@ const Actions = () => {
         <span className="text-[#FFCC33]">Made Simple</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 items-center overflow-hidden">
-        <Card
+        <ActionCard
           badge="1"
           icon="🔍"
           title="Monitor"
           detail="See when and how LLMs crawl your site."
         />
-        <Card
+        <ActionCard
           badge="2"
           icon="📊"
           title="Track Mentions"
           detail="Find out if your brand is cited in AI answers."
         />
 
-        <Card
+        <ActionCard
           badge="3"
           icon="⚡"
           title="Optimize"
