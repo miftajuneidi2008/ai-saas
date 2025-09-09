@@ -11,8 +11,9 @@ type priceCard =
     cardBorder:string;
     duration:string
     lists:string[]
+    buttonTextColor:string
 }
-const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,cardBorder,duration,lists}:priceCard) => {
+const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,cardBorder,duration,lists,buttonTextColor}:priceCard) => {
   return (
     <div className={`flex w-max flex-col bg-[#141414] border-[1px] border-[${cardBorder}] p-4 rounded-2xl relative`}>
       <div className="text-center">
@@ -32,7 +33,7 @@ const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,c
             )
   )
           }
-          <button className="inline-flex justify-center rounded-2xl px-2 py-1 text-[#FFFFFF] text-[16px] border-[2px] border-[#FFCC33]/50 my-2">{buttonText}</button>
+          <button className={`inline-flex justify-center rounded-2xl px-2 py-1 text-[${buttonTextColor}] text-[16px] ${buttonColor && `bg-[${buttonColor}]`} border-[2px] border-[#FFCC33]/50 my-2`}>{buttonText}</button>
       </div>
     </div>
     {absoluteHeader &&  <div className="absolute -top-3 left-1/3 bg-[#FFCC33] rounded-2xl px-2 py-1">

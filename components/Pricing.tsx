@@ -23,6 +23,8 @@ const Pricing = () => {
           price="$0"
           subtitle="Perfect to get started with visibility tracking"
           buttonText="Start Free"
+          buttonColor="transparent"
+           buttonTextColor="#FFFFFF"
           cardBorder="#333333"
           duration="forever"
           lists={[
@@ -37,8 +39,10 @@ const Pricing = () => {
           price="$17"
           subtitle="For founders and marketers who want deeper insights"
           buttonText="Get Started"
+          buttonColor="#FFCC33"
           cardBorder="#FFCC33"
           duration="month"
+          buttonTextColor="#0D0D0D"
           absoluteHeader="Most Popular"
           lists={[
             "1 Brand",
