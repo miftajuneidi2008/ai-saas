@@ -5,6 +5,7 @@ type priceCard =
     title:string;
     price:string;
     subtitle:string;
+    height:string;
     buttonColor?:string;
     buttonText:string;
     absoluteHeader?:string;
@@ -13,17 +14,18 @@ type priceCard =
     lists:string[]
     buttonTextColor:string
 }
-const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,cardBorder,duration,lists,buttonTextColor}:priceCard) => {
+const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,height,cardBorder,duration,lists,buttonTextColor}:priceCard) => {
   return (
-    <div className={`flex w-max flex-col bg-[#141414] border-[1px] border-[${cardBorder}] p-4 rounded-2xl relative`}>
+    <div className={`flex w-max flex-col bg-[#141414] border-[1px] border-[${cardBorder}] px-4 pt-4 rounded-2xl relative ${height} ${absoluteHeader && 'shadow-[0_0_10px_#FFCC33]'} max-w-[336px] max-sm:mx-auto`}>
       <div className="text-center">
+      
         <h2 className="text-[24px] font-bold text-[#FFFFFF]">{title}</h2>
         <div className="inline-flex">
           <p ><span  className="text-[36px] font-bold text-[#FFCC33]">{price}</span><span className="text-[#B3B3B3] text-[16px]">/{duration}</span></p>
         
         </div>
-        <p className="text-[#B3B3B3] text-[14px]">{subtitle}</p>
-        <div className="flex flex-col gap-4 my-2">
+        <p className="text-[#B3B3B3] text-[14px] w-[80%] mx-auto">{subtitle}</p>
+        <div className="flex flex-col space-y-3 my-2">
           {
             lists.map((list, index) => (
                 <div key={index} className="inline-flex items-center gap-3">
@@ -33,7 +35,7 @@ const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,c
             )
   )
           }
-          <button className={`inline-flex justify-center rounded-2xl px-2 py-1 text-[${buttonTextColor}] text-[16px] ${buttonColor && `bg-[${buttonColor}]`} border-[2px] border-[#FFCC33]/50 my-2`}>{buttonText}</button>
+          <button className={`inline-flex justify-center rounded-2xl px-2 py-1 text-[${buttonTextColor}] text-[16px] ${buttonColor && `${buttonColor}`} border-[2px] border-[#FFCC33]/50 mt-4`}>{buttonText}</button>
       </div>
     </div>
     {absoluteHeader &&  <div className="absolute -top-3 left-1/3 bg-[#FFCC33] rounded-2xl px-2 py-1">
