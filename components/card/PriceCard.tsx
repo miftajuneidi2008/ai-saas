@@ -16,7 +16,7 @@ type priceCard =
 }
 const PriceCard = ({title,price,subtitle,buttonColor,buttonText,absoluteHeader,height,cardBorder,duration,lists,buttonTextColor}:priceCard) => {
   return (
-    <div className={`flex w-max flex-col bg-[#141414] border-[1px] border-[${cardBorder}] px-4 pt-4 rounded-2xl relative ${height} ${absoluteHeader && 'shadow-[0_0_10px_#FFCC33]'} max-w-[336px] max-sm:mx-auto`}>
+    <div className={`flex w-max flex-col bg-[#141414] border-[1px] border-[${cardBorder}] px-4 pt-4 rounded-2xl relative ${height} ${absoluteHeader && 'shadow-[0_0_10px_#FFCC33]'} max-w-[336px] max-md:mx-auto`}>
       <div className="text-center">
       
         <h2 className="text-[24px] font-bold text-[#FFFFFF]">{title}</h2>

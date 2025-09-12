@@ -3,7 +3,7 @@ import PriceCard from "./card/PriceCard";
 
 const Pricing = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-6 lg:h-screen">
+    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-6 lg:h-screen overflow-hidden">
       <div className="text-center">
         <p className="inline-flex text-[12px] text-[#FFD966]">
           💳 Simple Pricing
@@ -17,7 +17,7 @@ const Pricing = () => {
           where your brand shows up.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <PriceCard
           title="Free"
           price="$0"

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 items-center min-h-screen md:h-[calc(100vh-80px)] max-w-[1340px] mx-auto">
+    <div className="flex flex-col md:flex-row gap-6 items-center lg:h-[calc(100vh-80px)] max-w-[1340px] mx-auto overflow-hidden">
       <div className="flex flex-col gap-4 w-full md:w-1/2 ml-10 md:ml-0">
         <p className="text-[12px] md:text-[13px] text-[#FFD966] border-[0.5px] border-[#FFD966] rounded-lg w-max px-2">
           🚀 The Future of Brand Visibility

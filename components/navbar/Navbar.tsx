@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,20 @@ const Navbar = () => {
               Get Started
             </Button>
           </div>
+        </div>
+        {/*small  screen*/}
+        <div className="flex md:hidden object-center justify-between">
+           <Image
+            src={`/assets/images/logo.png`}
+            alt="logo"
+            width={120}
+            height={50}
+            className="object-contain"
+          />
+          <button className="text-white mr-2 cursor-pointer">
+            <Menu />
+          </button>
+
         </div>
       </nav>
     </header>

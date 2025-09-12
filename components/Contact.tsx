@@ -3,13 +3,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mx-auto my-4 min-h-screen max-w-[1340px] md:h-screen">
+    <div className="mx-auto my-4 min-h-screen max-w-[1340px] md:h-screen overflow-hidden">
       <div className="relative z-10 flex h-full w-full flex-col justify-center opacity-100">
         <div className="flex w-full flex-col items-center gap-3">
           <div className="inline-flex justify-center text-[12px] text-[#FFD966]">
             🎯 Invite Only Access
           </div>
-          <h2 className="text-[48px] font-bold text-[#FFCC33]">
+          <h2 className="text-[30px] md:text-[48px] font-bold text-[#FFCC33]">
             Join the Waitlist
           </h2>
           <p className="max-w-2xl text-center text-[20px] leading-[32px] text-[#B3B3B3]">

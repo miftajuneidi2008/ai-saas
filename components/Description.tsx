@@ -2,7 +2,7 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className="flex flex-col md:flex-row  my-16 md:my-0 min-h-screen md:h-screen items-center gap-12 md:gap-10 max-w-[1340px] mx-2 md:mx-auto">
+    <div className="flex flex-col md:flex-row  my-16 md:my-0  md:h-screen items-center gap-12 md:gap-10 max-w-[1340px] mx-2 md:mx-auto overflow-hidden">
       <div className="text-white w-full md:w-1/2 flex flex-col gap-4 ml-2 md:ml-0 ">
         <div>
           <h2 className="font-bold text-[40px]">

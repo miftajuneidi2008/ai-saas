@@ -4,7 +4,7 @@ import ActionCard from "./card/ActionCard";
 
 const Actions = () => {
   return (
-    <div className="flex flex-col gap-10 my-4 container mx-auto">
+    <div className="flex flex-col gap-10 my-4 container mx-auto overflow-hidden">
       <h1 className="text-[30px] md:text-[48px] text-[#FFFFFF] text-center font-bold">
         From Crawl to Visibility -
         <span className="text-[#FFCC33]">Made Simple</span>

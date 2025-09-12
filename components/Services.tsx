@@ -3,7 +3,7 @@ import ServiceCard from "./card/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-8 text-white md:h-screen">
+    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-8 text-white md:h-screen overflow-hidden">
       <div className="text-center">
         <p className="text-[12px] text-[#FFD966]">⚡ Core Features</p>
         <h2 className="flex flex-col text-[30px] font-bold text-[#FFFFFF] md:text-[48px]">
