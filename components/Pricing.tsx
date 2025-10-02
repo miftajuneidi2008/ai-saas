@@ -3,7 +3,7 @@ import PriceCard from "./card/PriceCard";
 
 const Pricing = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-6 lg:h-screen overflow-hidden">
+    <div className="mx-auto flex  max-w-[1340px] flex-col justify-center gap-6 h-max overflow-hidden">
       <div className="text-center">
         <p className="inline-flex text-[12px] text-[#FFD966]">
           💳 Simple Pricing
