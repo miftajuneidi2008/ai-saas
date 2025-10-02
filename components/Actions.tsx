@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./card/ActionCard";
 import ActionCard from "./card/ActionCard";
 
 const Actions = () => {

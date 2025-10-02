@@ -13,7 +13,7 @@ const Contact = () => {
             Join the Waitlist
           </h2>
           <p className="max-w-2xl text-center text-[20px] leading-[32px] text-[#B3B3B3]">
-            We're currently in invite-only beta. Submit your details and we'll
+            We are currently in invite-only beta. Submit your details and we will
             send you a login link when your account is ready.
           </p>
           <div className="w-full max-w-[448px]">
@@ -56,7 +56,7 @@ const Contact = () => {
                 />
               </button>
               <div className="w-full max-w-[448px] text-center">
-                <p className="w-full text-[14px] text-[#B3B3B3]">We'll review your application and send you an invite within 24-48 hours.</p>
+                <p className="w-full text-[14px] text-[#B3B3B3]">We will review your application and send you an invite within 24-48 hours.</p>
               </div>
             </form>
           </div>
