@@ -3,12 +3,12 @@ import ActionCard from "./card/ActionCard";
 
 const Actions = () => {
   return (
-    <div className="flex flex-col gap-10 my-4 container mx-auto overflow-hidden">
-      <h1 className="text-[30px] md:text-[48px] text-[#FFFFFF] text-center font-bold">
+    <div className="container mx-auto my-4 flex flex-col gap-10 overflow-hidden">
+      <h1 className="text-center text-[30px] font-bold text-[#FFFFFF] md:text-[48px]">
         From Crawl to Visibility -
         <span className="text-[#FFCC33]">Made Simple</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 items-center overflow-hidden">
+      <div className="grid grid-cols-1 items-center gap-4 overflow-hidden md:grid-cols-2 md:gap-8 lg:grid-cols-3">
         <ActionCard
           badge="1"
           icon="🔍"

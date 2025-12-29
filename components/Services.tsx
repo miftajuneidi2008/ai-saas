@@ -3,7 +3,7 @@ import ServiceCard from "./card/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="mx-auto flex min-h-screen max-w-[1340px] flex-col justify-center gap-8 text-white md:h-max overflow-hidden">
+    <div className="mx-4 flex min-h-screen max-w-[1340px] flex-col justify-center gap-8 overflow-hidden text-white md:mx-auto md:h-max">
       <div className="text-center">
         <p className="text-[12px] text-[#FFD966]">⚡ Core Features</p>
         <h2 className="flex flex-col text-[30px] font-bold text-[#FFFFFF] md:text-[48px]">
@@ -37,12 +37,16 @@ const Services = () => {
           desc="Get notified immediately when your visibility changes or new opportunities arise."
         />
       </div>
-      <div className="flex items-center self-center my-6">
-      <div className="flex flex-col gap-4 border-[2px] border-[#FFCC33] bg-[#291d04] w-max items-center p-2 rounded-2xl text-center ">
-        <p className="text-[36px]">🚀</p>
-        <p className="text-[#FFFFFF] text-[20px]">Advanced AI Analytics</p>
-        <p className="text-[#B3B3B3] max-w-[500px]">Deep insights into how different AI models perceive and reference your brand,with actionable recommendations to improve your AI search presence.</p>
-      </div>
+      <div className="mx-2 my-6 flex items-center self-center md:mx-0">
+        <div className="flex flex-col items-center gap-4 rounded-2xl border-2 border-[#FFCC33] bg-[#291d04] p-2 px-2 text-center">
+          <p className="text-[36px]">🚀</p>
+          <p className="text-[20px] text-[#FFFFFF]">Advanced AI Analytics</p>
+          <p className="w-full max-w-[500px] text-[#B3B3B3]">
+            Deep insights into how different AI models perceive and reference
+            your brand,with actionable recommendations to improve your AI search
+            presence.
+          </p>
+        </div>
       </div>
     </div>
   );
